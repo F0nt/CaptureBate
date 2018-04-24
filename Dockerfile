@@ -8,3 +8,7 @@ RUN apk --update --no-cache add python py-pip libxml2 libxslt \
  && rm -Rf /tmp/*
 
 CMD cd /root/capturebate && python main.py
+
+VOLUME
+/config:/root/capturebate/config
+/data:/data
