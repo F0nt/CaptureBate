@@ -5,3 +5,4 @@ capturebate:
     - /etc/localtime:/etc/localtime:ro
     - /config:/root/capturebate/config
     - /data:/data
+    -.:/root/capturebate
