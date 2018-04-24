@@ -6,7 +6,5 @@ RUN apk --update --no-cache add python py-pip libxml2 libxslt \
  && cd /root/capturebate && pip install --no-cache-dir -r requirements.txt \
  && apk del build-dep --no-cache \
  && rm -Rf /tmp/*
- 
-COPY /root/capturebate/config /config
 
 CMD cd /root/capturebate && python main.py
