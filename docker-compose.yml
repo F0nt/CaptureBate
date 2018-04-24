@@ -3,5 +3,5 @@ capturebate:
   image: bzsklb/capturebate:latest
   volumes:
     - /etc/localtime:/etc/localtime:ro
-    - /config:/root/capturebate/config
+    - ./config:/root/capturebate/config
     - /data:/data
